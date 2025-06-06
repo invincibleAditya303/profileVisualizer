@@ -1,0 +1,65 @@
+import styled from "styled-components";
+
+export const LandingPageBgContainer = styled.div`
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const LandingPageContainer = styled.div`
+    height: 812px;
+    width: 375px;
+    background-color: #F7F8F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+`
+
+export const RegistrationCheckContainer = styled.div`
+    height: 176px;
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 41px;
+`
+
+export const WelcomeHeading = styled.h1`
+    color: #1D2226;
+    font-size: 28px;
+    font-family: "Rubik";
+    font-weight: 400;
+    line-height: 17px;
+    padding-bottom: 10px;
+`
+
+export const PageDescription = styled.p`
+    color: #1D2226;
+    font-size: 18px;
+    font-family: "Rubik";
+    line-height: 26px;
+`
+
+export const CreateAccountButton = styled.button`
+    height: 46px;
+    width: 335px;
+    background-color: #6C25FF;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Rubik";
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    margin-top: 29px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    outline: none;
+`
+
+export const AlreadyRegisteredButton = styled(CreateAccountButton)`
+    background-color: #6C25FF4B;
+    color: #1D2226;
+    margin-top: 0px;
+    margin-bottom: 0px;
+`
