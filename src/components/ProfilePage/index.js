@@ -4,11 +4,12 @@ import { newUserContext } from "../../context/userDataContext"
 
 import { Navbar, NavbarTitle, ProfileBgContainer, ProfileCameraIcon, ProfileContainer, ProfileDescription, ProfileDetailsContainer, ProfileEmail, ProfileImg, ProfileImgContainer, ProfileInfoContainer, ProfileTitle } from "./styledComponents"
 
-const Profile = () => {
+const Profile = props => {
     const [userData] = useContext(newUserContext)
 
     const currentUser = userData.filter(eachItem => eachItem.isLoggedIn === true)
-    const {name, email} = currentUser[0]
+
+    const {name, email, isLoggedIn} = currentUser[0]
 
     return (
         <ProfileBgContainer>
@@ -16,7 +17,7 @@ const Profile = () => {
                 <Navbar>
                     <NavbarTitle>Account Settings</NavbarTitle>
                 </Navbar>
-                <ProfileInfoContainer>
+                {isLoggedIn && <><ProfileInfoContainer>
                     <ProfileImgContainer>
                         <ProfileImg src="https://res.cloudinary.com/dtrjr55q7/image/upload/v1749178475/Ellipse_114_1_ztpc7y.jpg" alt="profile img" />
                         <ProfileCameraIcon src="https://res.cloudinary.com/dtrjr55q7/image/upload/v1749179167/Group_1585_1_ecimhu.jpg" alt="camre icon" />
@@ -28,7 +29,7 @@ const Profile = () => {
                 </ProfileInfoContainer>
                 <ProfileDescription>
                         Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam
-                    </ProfileDescription>
+                    </ProfileDescription></>}
             </ProfileContainer>
         </ProfileBgContainer>
     )

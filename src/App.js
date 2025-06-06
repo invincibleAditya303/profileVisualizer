@@ -6,6 +6,7 @@ import LandingPage from './components/LandingPage';
 import Login from './components/LoginPage';
 import Register from './components/RegisterPage'
 import Profile from './components/ProfilePage';
+import NotFound from './components/NotFound'
 import { newUserContext } from './context/userDataContext'
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
               return <Route path="/" component={LandingPage}/>
             }
           })}
+        <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
   )

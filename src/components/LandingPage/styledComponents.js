@@ -33,6 +33,8 @@ export const WelcomeHeading = styled.h1`
 `
 
 export const PageDescription = styled.p`
+    width: 232px;
+    height: 48px;
     color: #1D2226;
     font-size: 18px;
     font-family: "Rubik";
