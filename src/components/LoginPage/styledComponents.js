@@ -5,12 +5,21 @@ export const LoginBgContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (width >= 776px) {
+        min-height: 100vh;
+    }
 `
 
 export const LoginContainer = styled.div`
     height: 812px;
     width: 375px;
     background-color: #F7F8F9;
+
+    @media (width >= 776px) {
+        height: 70vh;
+        width: 60vw;
+    }
 `
 
 export const LoginFormContainer = styled.form`
@@ -24,9 +33,13 @@ export const SignInHeading = styled.h1`
     color: #1D2226;
     font-size: 28px;
     font-family: "Rubik";
-    font-weight: 400;
+    font-weight: 500;
     line-height: 36px;
     padding-bottom: 14px;
+
+    @media (width >= 776px) {
+        font-size: 36px;
+    }
 `
 
 export const SignInDescription = styled.p`
@@ -36,12 +49,21 @@ export const SignInDescription = styled.p`
     line-height: 26px;
     opacity: 0.6;
     padding-bottom: 24px;
+
+    @media (width >= 776px) {
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
 `
 
 export const InputContainer = styled.div`
     height: 49px;
     width: 335px;
     margin-bottom: 34px;
+
+    @media (width >= 776px) {
+        margin-bottom: 24px;
+    }
 `
 
 export const LoginLabelInput = styled.label`
@@ -49,6 +71,10 @@ export const LoginLabelInput = styled.label`
     font-size: 13px;
     font-family: "Rubik";
     line-height: 17px;
+
+    @media (width >= 776px) {
+        font-size: 16px;
+    }
 `
 
 export const LoginInput = styled.input`
@@ -77,6 +103,7 @@ export const LoginButton = styled.button`
     text-align: center;
     padding: 5px;
     border-radius: 6px;
+    border-width: 0px;
     cursor: pointer;
     outline: none;
 `

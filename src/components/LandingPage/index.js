@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { AlreadyRegisteredButton, CreateAccountButton, LandingPageBgContainer, LandingPageContainer, PageDescription, RegistrationCheckContainer, WelcomeHeading } from "./styledComponents"; 
+import { AlreadyRegisteredButton, ButtonsContainer, CreateAccountButton, LandingPageBgContainer, LandingPageContainer, PageDescription, RegistrationCheckContainer, WelcomeHeading } from "./styledComponents"; 
 
 const LandingPage = () => (
     <LandingPageBgContainer>
@@ -8,12 +8,14 @@ const LandingPage = () => (
             <RegistrationCheckContainer>
                 <WelcomeHeading>Welcome to PopX</WelcomeHeading>
                 <PageDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</PageDescription>
-                <Link to="/register">
-                    <CreateAccountButton type="button">Create Account</CreateAccountButton>
-                </Link>
-                <Link to="/login">
-                    <AlreadyRegisteredButton type="button">Already Registered?Login</AlreadyRegisteredButton>
-                </Link>
+                <ButtonsContainer>
+                    <Link to="/register">
+                        <CreateAccountButton type="button">Create Account</CreateAccountButton>
+                    </Link>
+                    <Link to="/login">
+                        <AlreadyRegisteredButton type="button">Already Registered?Login</AlreadyRegisteredButton>
+                    </Link>
+                </ButtonsContainer>
             </RegistrationCheckContainer>
         </LandingPageContainer>
     </LandingPageBgContainer>

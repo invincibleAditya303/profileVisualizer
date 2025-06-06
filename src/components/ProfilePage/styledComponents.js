@@ -11,6 +11,10 @@ export const ProfileContainer = styled.div`
     height: 812px;
     width: 375px;
     background-color: #F7F8F9;
+
+    @media (width >= 776px) {
+        width: 100vw;
+    }
 `
 
 export const Navbar = styled.div`
@@ -27,6 +31,11 @@ export const NavbarTitle = styled.h1`
     font-family: "Rubik";
     line-height: 21px;
     padding-left: 15px;
+
+    @media (width >= 776px) {
+        font-size: 24px;
+        padding-left: 50px;
+    }
 `
 
 export const ProfileInfoContainer = styled.div`
@@ -36,6 +45,11 @@ export const ProfileInfoContainer = styled.div`
     margin-left: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
+
+    @media (width >= 776px) {
+        height: 100px;
+        margin-left: 60px;
+    }
 `
 
 export const ProfileImgContainer = styled.div`
@@ -44,6 +58,12 @@ export const ProfileImgContainer = styled.div`
     position: relative;
     display: inline-block;
     margin-right: 20px;
+
+    @media (width >= 776px) {
+        height: 100px;
+        width: 100px;
+        margin-right: 40px;
+    }
 `
 
 export const ProfileImg = styled.img`
@@ -51,6 +71,11 @@ export const ProfileImg = styled.img`
     width: 76px;
     border-radius: 38px;
     object-fit: cover;
+
+    @media (width >= 776px) {
+        height: 100px;
+        width: 100px;
+    }
 `
 
 export const ProfileCameraIcon = styled.img`
@@ -63,6 +88,10 @@ export const ProfileCameraIcon = styled.img`
 
 export const ProfileDetailsContainer = styled.div`
     height: 41px;
+
+    @media (width >= 776px) {
+        height: 60px;
+    }
 `
 
 export const ProfileTitle = styled.p`
@@ -72,6 +101,10 @@ export const ProfileTitle = styled.p`
     font-weight: 400;
     line-height: 19px;
     padding-bottom: 3px;
+
+    @media (width >= 776px) {
+        font-size: 30px;
+    }
 `
 
 export const ProfileEmail = styled.p`
@@ -79,6 +112,10 @@ export const ProfileEmail = styled.p`
     font-size: 14px;
     font-family: "Rubik";
     line-height: 19px;
+
+    @media (width >= 776px) {
+        font-size: 26px;
+    }
 `
 
 export const ProfileDescription = styled.p`
@@ -90,4 +127,10 @@ export const ProfileDescription = styled.p`
     line-height: 22px;
     text-transform: capitalize;
     padding-left: 20px;
+
+    @media (width >= 776px) {
+        width: 40vw;
+        font-size: 22px;
+        padding-left: 60px;
+    }
 `

@@ -1,3 +1,27 @@
+Features
+
+    Landing page for introduction
+    User Sign Up and Sign In pages
+    Profile page to view user info after login
+    Mobile-first design using Tailwind CSS
+    Simple and clean UI
+
+Tech Stack
+
+    React 19
+    JavaScript
+    StyledComponents
+
+App runs at: https://profilevisualizer.onrender.com
+
+Pages Implemented
+
+    / → Landing page
+    /signup → Create account
+    /signin → Login to account
+    /profile → Display user profile
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

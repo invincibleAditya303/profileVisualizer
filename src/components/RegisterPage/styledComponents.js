@@ -5,12 +5,21 @@ export const RegisterBgContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (width >= 776px) {
+        min-height: 100vh;
+    }
 `
 
 export const RegisterContainer = styled.div`
     height: 812px;
     width: 375px;
     background-color: #F7F8F9;
+
+    @media (width >= 776px) {
+        height: 95vh;
+        width: 60vw;
+    }
 `
 
 export const RegisterFormContainer = styled.form`
@@ -23,9 +32,13 @@ export const CreateAccountHeading = styled.h1`
     color: #1D2226;
     font-size: 28px;
     font-family: "Rubik";
-    font-weight: 400;
+    font-weight: 500;
     line-height: 36px;
     padding-bottom: 2px;
+
+    @media (width >= 776px) {
+        font-size: 36px;
+    }
 `
 
 export const RegisterInputContainer = styled.div`
@@ -39,6 +52,10 @@ export const RegisterLabelInput = styled.label`
     font-size: 13px;
     font-family: "Rubik";
     line-height: 17px;
+
+    @media (width >= 776px) {
+        font-size: 16px;
+    }
 `
 
 export const RegisterInput = styled.input`
@@ -107,8 +124,14 @@ export const RegisterButton = styled.button`
     text-align: center;
     padding: 5px;
     bordre-radius: 6px;
+    border-width: 0px;
     margin-top: 215px;
     margin-bottom: 30px;
     cursor: pointer;
     outline: none;
+
+    @media (width >= 776px) {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
 `

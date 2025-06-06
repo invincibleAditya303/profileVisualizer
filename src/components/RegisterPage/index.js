@@ -71,12 +71,12 @@ const Register = () => {
                         <RegisterCheckType>Are you an Agency?*</RegisterCheckType>
                         <RegisterRadioInputContainer>
                             <RegisterRadioInputOptionContainer>
-                                <RegisterRadioInput type="radio" id="yes" name="isAgency" value="yes" onChange={onChangeAgency} checked />
+                                <RegisterRadioInput type="radio" id="yes" name="isAgency" value="yes" onChange={onChangeAgency} checked={isAgency === "yes"} />
                                 <RegisterRadioLabelInput htmlFor="yes">Yes</RegisterRadioLabelInput>
                             </RegisterRadioInputOptionContainer>
                             <RegisterRadioInputOptionContainer>
-                                <RegisterRadioInput type="radio" id="no" />
-                                <RegisterRadioLabelInput htmlFor="no" name="isAgnecy" value="no" onChange={onChangeAgency} >No</RegisterRadioLabelInput>
+                                <RegisterRadioInput type="radio" id="no" name="isAgnecy" value="no" onChange={onChangeAgency} checked={isAgency === "no"} />
+                                <RegisterRadioLabelInput htmlFor="no" >No</RegisterRadioLabelInput>
                             </RegisterRadioInputOptionContainer>
                         </RegisterRadioInputContainer>
                     </RegisterRadioContainer>
